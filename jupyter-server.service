@@ -1,0 +1,10 @@
+[Unit]
+Description=Jupyter/IPython notebook server
+
+[Service]
+ExecStart=/usr/bin/run-jupyter-server
+ExecStop=/bin/sh -c "kill $(pgrep jupyter)"
+
+[Install]
+WantedBy=multi-user.target
+

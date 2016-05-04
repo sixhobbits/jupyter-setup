@@ -1,0 +1,3 @@
+#!/bin/sh
+su -s /bin/sh -c 'exec "$0" "$@"' jupyteruser -- /usr/bin/jupyter-notebook >> /tmp/jupyter.log
+
